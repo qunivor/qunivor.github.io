@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qunivor</title>
+  <meta name="description" content="큐니버(Qunivor)는 모바일 게임을 개발하는 스튜디오입니다.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fb;
+      --panel: #ffffff;
+      --text: #1b1f2a;
+      --muted: #5e6778;
+      --line: #d9deea;
+      --accent: #1769e0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    header, main, footer {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 32px 0 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 15px;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h1 {
+      font-size: clamp(34px, 7vw, 64px);
+      line-height: 1.05;
+      margin: 0 0 18px;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 12px;
+      letter-spacing: 0;
+    }
+
+    p { margin: 0 0 12px; }
+
+    .brand {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .hero {
+      padding: 64px 0 48px;
+    }
+
+    .lead {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 19px;
+    }
+
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .link-item {
+      display: block;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcff;
+    }
+
+    footer {
+      padding: 24px 0 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">Qunivor</a>
+    <nav aria-label="Primary">
+      <a href="/endlessbreak/">EndlessBreak</a>
+      <a href="/support/">Support</a>
+      <a href="/endlessbreak/privacy/">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>큐니버(Qunivor)</h1>
+      <p class="lead">Qunivor is a mobile game studio creating focused, easy-to-start games for players in Korea and beyond.</p>
+    </section>
+
+    <section class="section">
+      <h2>Studio</h2>
+      <p>큐니버(Qunivor)는 모바일 게임 개발 스튜디오입니다. 첫 출시작 EndlessBreak를 시작으로 짧고 몰입감 있는 플레이 경험을 만들고 있습니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>Games</h2>
+      <p>EndlessBreak is a portrait survival action game with wave-based combat, weapon upgrades, and local progress saving.</p>
+      <div class="links">
+        <a class="link-item" href="/endlessbreak/">EndlessBreak</a>
+        <a class="link-item" href="/support/">Support: qunivor@gmail.com</a>
+        <a class="link-item" href="/endlessbreak/privacy/">Privacy Policy</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 큐니버(Qunivor). Contact: <a href="mailto:qunivor@gmail.com">qunivor@gmail.com</a></p>
+  </footer>
+</body>
+</html>
