@@ -1,142 +1,46 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EndlessBreak | Qunivor</title>
-  <meta name="description" content="EndlessBreak is a portrait survival action game by 큐니버(Qunivor).">
+  <title>EndlessBreak</title>
   <style>
-    :root {
-      --bg: #f7f8fb;
-      --panel: #ffffff;
-      --text: #1b1f2a;
-      --muted: #5e6778;
-      --line: #d9deea;
-      --accent: #1769e0;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, "Noto Sans KR", sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.6;
-    }
-
-    header, main, footer {
-      width: min(960px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    header {
-      padding: 32px 0 20px;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: center;
-      border-bottom: 1px solid var(--line);
-    }
-
-    nav {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      font-size: 15px;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    h1 {
-      font-size: clamp(34px, 7vw, 64px);
-      line-height: 1.05;
-      margin: 0 0 18px;
-      letter-spacing: 0;
-    }
-
-    h2 {
-      font-size: 24px;
-      margin: 0 0 12px;
-      letter-spacing: 0;
-    }
-
-    p, li { margin: 0 0 12px; }
-    ul { margin: 0; padding-left: 20px; }
-
-    .brand {
-      font-weight: 700;
-      font-size: 20px;
-    }
-
-    .hero {
-      padding: 64px 0 48px;
-    }
-
-    .lead {
-      max-width: 680px;
-      color: var(--muted);
-      font-size: 19px;
-    }
-
-    .section {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 24px;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      padding: 24px 0 40px;
-      color: var(--muted);
-      font-size: 14px;
-    }
+    :root { color-scheme: dark; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #08111d; color: #eef6ff; }
+    main { max-width: 960px; margin: 0 auto; padding: 40px 24px 80px; }
+    h1, h2 { margin: 0 0 16px; }
+    h1 { font-size: 44px; }
+    h2 { font-size: 24px; margin-top: 32px; }
+    p, li { line-height: 1.7; color: #d7e6f4; }
+    ul { padding-left: 20px; }
+    a { color: #7fd8ff; }
+    .panel { background: rgba(9, 22, 38, 0.86); border: 1px solid rgba(127, 216, 255, 0.32); border-radius: 18px; padding: 28px; }
   </style>
 </head>
 <body>
-  <header>
-    <a class="brand" href="/">Qunivor</a>
-    <nav aria-label="Primary">
-      <a href="/endlessbreak/">EndlessBreak</a>
-      <a href="/support/">Support</a>
-      <a href="/endlessbreak/privacy/">Privacy</a>
-    </nav>
-  </header>
-
   <main>
-    <section class="hero">
+    <section class="panel">
       <h1>EndlessBreak</h1>
-      <p class="lead">A portrait survival action game from 큐니버(Qunivor). Dodge enemies, clear waves, collect coins, and grow your weapon build.</p>
-    </section>
+      <p>Fast portrait survival action. Dodge enemies, clear waves, and build your weapon loadout for short, focused runs.</p>
 
-    <section class="section">
-      <h2>About</h2>
-      <p>EndlessBreak is built for short, focused runs on Android. Move through enemy pressure, survive wave after wave, and improve your weapons with local progress saved on your device.</p>
-    </section>
-
-    <section class="section">
       <h2>Features</h2>
       <ul>
         <li>Simple portrait controls</li>
         <li>Wave-based survival action</li>
         <li>Weapon purchase and upgrade progression</li>
         <li>Local save support</li>
-        <li>No ads in the first release</li>
-        <li>No account login required</li>
+        <li>Toss full-screen ads may appear only on two LIFE continue slots</li>
+        <li>No analytics</li>
+        <li>No in-app purchases</li>
+        <li>No third-party platform account login required</li>
       </ul>
-    </section>
 
-    <section class="section">
       <h2>Support</h2>
-      <p>For support, contact <a href="mailto:qunivor@gmail.com">qunivor@gmail.com</a>.</p>
-      <p><a href="/endlessbreak/privacy/">Read the EndlessBreak privacy policy</a>.</p>
+      <p>Developer: 큐니버(Qunivor)</p>
+      <p>Email: <a href="mailto:qunivor@gmail.com">qunivor@gmail.com</a></p>
+      <p>약관 및 개인정보 동의: <a href="/endlessbreak/terms/">/endlessbreak/terms/</a></p>
+      <p>Privacy policy: <a href="/endlessbreak/privacy/">/endlessbreak/privacy/</a></p>
     </section>
   </main>
-
-  <footer>
-    <p>© 2026 큐니버(Qunivor). Contact: <a href="mailto:qunivor@gmail.com">qunivor@gmail.com</a></p>
-  </footer>
 </body>
 </html>
